@@ -1,0 +1,21 @@
+^ tìm giá trị đầu chuỗi ex: ^who
+$ tìm gía trị cuối chuỗi ex: who$
+muốn tìm kí hiệu đặc biệt thì thêm \ ex: \$ tìm kí tự $ trong chuỗi
+tìm kí hiệu $ ở đầu chuỗi ex: ^\$
+tìm kí hiệu $ ở cuối chuỗi ex: \$$
+tìm dấu \ trong chuỗi ex: \\
+. đại diện cho 1 kí tự bất kì, .. là 2 kí tự
+[] tìm tập hợp các kí tự ex: [oyo] trong how do you do : o, o, y, o, u, o
+[]. tìm giá trị bắt đầu bằng giá trị tìm và theo sao là một kí tự bất kì ex: [dH]. ho, do, do
+[][] ghép từng kí tự thành cặp theo phép nhân phân phối và tìm kiếm ex: [owy][ywo] tìm: oy, ow, oo, wy, ww, wo, yy, yww, yo , có: ow, yo
+[x-y] lấy kí tự trong một khoảng ex: [a-d] trong alphabet abcd, ABCD *lấy được chuỗi số.
+* kết hợp [a-ce-g2-4] được: abcefg234
+* phủ định [^a-c] được dcef
+* tìm hoặc (on|in|at) được on hoặc in hoặc at trong chuỗi
+* tìm hoặc có điều kiện (Mon|Tues|Fri)day được Monday, Tuesday, Friday
+kí hiệu * đại diện cho kí tự xuất hiện 0 hoặc nhiều lần (chạy từ 0-n)
+ex: chuỗi *aab ab b tìm a*b kết quả: aab, ab, b ~ * = 2 , 1 , 0
+kí hiệu + đại diện cho kí tự xuất hiện 1 hoặc nhiều lần (chạy từ 1-n)
+ex: tìm a+b kết quả: aab, ab ~ + = 2,1
+kí hiệu ? đại diện cho kí tự xuất hiện 0 hoặc 1 lần
+ex: tìm a?b kết quả: ab, ab, b ~ 1,1,0

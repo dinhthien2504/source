@@ -1,0 +1,175 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.container-order {
+  display: flex;
+}
+
+/* Sidebar */
+.sidebar-order {
+  width: 25%;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.menu-order {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-item-order {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #333;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.menu-item-order:hover {
+  color: #088178;
+}
+.menu-item-order {
+  color: #000;
+}
+
+/* Main content */
+.content-order {
+  width: 75%;
+  padding: 20px;
+}
+
+.title-order {
+  margin-left: 10px;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.tabs-order {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tab-order {
+  position: relative;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.tab-order:hover {
+  background-color: #088178;
+  color: #fff;
+  border-color: #088178;
+}
+
+/* Order list */
+.order-list-order {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.order-item-order {
+  border: 1px solid #000;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.status-order {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.item-title-order {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.item-quantity-order,
+.item-price-order,
+.total-order,
+.time-order {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.item-price-order {
+  color: #088178;
+  font-weight: bold;
+}
+.details-button-order {
+  padding: 10px 15px;
+  background-color: #088178;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  /*  */
+}
+
+.details-button-order:hover {
+  background-color: #0ca399;
+}
+.pro-order {
+  display: flex;
+}
+.pro-info-order {
+  margin-left: 20px;
+}
+.pro-item-order {
+  margin-bottom: 10px;
+  position: relative;
+  border: 1px solid #000;
+  padding: 10px;
+  border-radius: 5px;
+}
+.pro-list-order {
+  border: 1px solid #000;
+  padding: 10px;
+  border-radius: 5px;
+}
+.status-time-order {
+  display: flex;
+  justify-content: space-between;
+}
+.details-button-order {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+.badge {
+  position: absolute;
+  font-size: 10px;
+  top: -12px;
+  right: -8px;
+  height: 20px;
+  width: 20px;
+  background-color: red;
+  color: #fff;
+  text-align: center; /* Căn giữa theo chiều ngang (dự phòng) */
+  display: flex; /* Sử dụng Flexbox */
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  border-radius: 50%; /* (Tuỳ chọn) Làm tròn để tạo hình tròn */
+}
+.wait-apply {
+  color: rgb(28, 25, 216);
+  font-weight: bold;
+}
+.time-pro-order {
+  color: rgb(28, 25, 216);
+  font-weight: bold;
+}
+.box-menu {
+  border: 1px solid black;
+  border-radius: 5px;
+}
